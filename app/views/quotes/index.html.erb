@@ -1,0 +1,17 @@
+
+<section>
+  <h1>Quotes</h1>
+
+  <% @quotes.each do |quote| %>
+    "<%= quote.saying %>"
+    <br />
+    &nbsp; &nbsp; &nbsp; -- <%= quote.source %>
+    <br />
+    <br />
+  <% end %>
+
+  <br />
+
+  <%= link_to "Add", new_user_quote_path(@user.id) %>
+</section>
+
