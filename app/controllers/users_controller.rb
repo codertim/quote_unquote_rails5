@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    logger.debug("params[:id]=" + params[:id])
     @user = User.find(params[:id])
     # debugger
   end
@@ -11,6 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       flash[:success] = "Welcome to the club!"
       redirect_to @user
     else
@@ -21,8 +23,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 
 end
