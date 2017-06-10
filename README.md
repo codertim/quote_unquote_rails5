@@ -2,3 +2,7 @@
 
 Rails tutorial: finished chapters 1-8
 
+Palette from plamenj: http://www.colourlovers.com/palette/148712/Gamebookers
+  FF9900 (orange), 424242 (dark gray), 393939 (light gray), BCBCBC (medium gray), 3299BB (blue)
+
+
