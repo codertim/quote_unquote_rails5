@@ -7,6 +7,11 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$cool-guy-blue: #3299BB;
+$jolly-fun-orange: #FF9900;
+$shady-dude-dark-gray: #424242;
+$open-kitchen-light-gray: #E9E9E9;
+
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -30,6 +35,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
+  background-color: $open-kitchen-light-gray;
   padding-top: 60px;
 }
 
@@ -209,6 +215,28 @@ div#home-page-welcome {
 input[type=submit]:hover {
   box-shadow: 0 0 20px #aaa;
   transition: all 0.7s;
+}
+
+
+h1 {
+  color: $cool-guy-blue;
+}
+header.navbar {
+  background-color: $jolly-fun-orange;
+  a:visited {
+     color: $cool-guy-blue;
+  }
+}
+
+
+.quote-saying {
+  background-color: $jolly-fun-orange;
+  border-radius: 10px;
+  padding: 3px 30px 3px 15px;
+}
+
+.quote-source {
+  font-style: italic;
 }
 
 

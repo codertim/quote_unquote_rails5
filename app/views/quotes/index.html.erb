@@ -3,11 +3,14 @@
   <h1>Quotes</h1>
 
   <% @quotes.each do |quote| %>
-    "<%= quote.saying %>"
+    <span class="quote-saying">
+        "<%= quote.saying %>"
+    </span>
     <br />
-    &nbsp; &nbsp; &nbsp; -- <%= quote.source %>
-    <br />
-    <br />
+    <span class="quote-source">
+    &nbsp; &nbsp; &nbsp; - <%= quote.source %>
+    </span>
+    <br /> <br />
   <% end %>
 
   <br />

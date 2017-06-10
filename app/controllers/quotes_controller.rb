@@ -7,7 +7,7 @@ class QuotesController < ApplicationController
     @quote = Quote.new(quote_params)
 
     if @quote.save!
-      flash[:success] = "New Quote Saved"
+      flash[:success] = "Quote Saved!"
       redirect_to user_quotes_path(current_user)
     end
   end
