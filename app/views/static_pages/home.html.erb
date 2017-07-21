@@ -1,14 +1,14 @@
 <% provide(:title, "Home") %>
-<div class="center jumbotron">
+<div id="home-page" class="center jumbotron">
   <div id="home-page-welcome">
-      <h1>Welcome to the QuoteUnquote App !!!</h1>
-  </div>
+     <h1>Welcome to QuoteUnquote !!!</h1>
 
-  <% if !(logged_in?) %>
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-  <% else %>
-    <%= link_to "Go to My Quotes", user_quotes_path(@user.id), class: "btn btn-lg btn-danger" %> 
-  <% end %>
+      <% if !(logged_in?) %>
+        <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+      <% else %>
+        <%= link_to "Go to My Quotes", user_quotes_path(@user.id), class: "btn btn-lg btn-danger" %> 
+      <% end %>
+  </div>
 </div>
 
 <br />
