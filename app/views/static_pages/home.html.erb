@@ -1,7 +1,7 @@
 <% provide(:title, "Home") %>
 <div id="home-page" class="center jumbotron">
   <div id="home-page-welcome">
-     <h1>Welcome to QuoteUnquote !!!</h1>
+     <div class="well"><h1>Welcome to QuoteUnquote !!!</h1></div>
 
       <% if !(logged_in?) %>
         <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
