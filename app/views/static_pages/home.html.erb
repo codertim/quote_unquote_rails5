@@ -2,14 +2,15 @@
 <div id="home-page" class="center jumbotron">
   <div id="home-page-welcome">
      <div class="well"><h1>Welcome to QuoteUnquote !!!</h1></div>
-
+  </div>
+</div>
+<section id="login-signup-links">
       <% if !(logged_in?) %>
         <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
       <% else %>
         <%= link_to "Go to My Quotes", user_quotes_path(@user.id), class: "btn btn-lg btn-danger" %> 
       <% end %>
-  </div>
-</div>
+</section>
 
 <br />
 <br />
